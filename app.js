@@ -3,13 +3,9 @@ var comment = document.getElementById('comment');
 var countleft=document.getElementById('countleft');
 var userlimit=document.getElementById('limit');
 var globalWordCounter = 0;
-var WORD_LIMIT;
+var WORD_LIMIT=60;
 userlimit.addEventListener('input',function(e){
-    if(e.target.value<=0 || null){
-        WORD_LIMIT=60;
-        }
-        else{
-            WORD_LIMIT=e.target.value;     }
+            WORD_LIMIT=e.target.value;     
 
 
 })
